@@ -1,5 +1,6 @@
 """Query Processing Module for SuperStream RAG"""
 
+from .api_client import APIClientConfig, create_openai_client
 from .processor import QueryProcessor
 from .normalizer import QueryNormalizer
 from .expander import QueryExpander
@@ -9,6 +10,8 @@ from .decomposer import QueryDecomposer
 from .intent_detector import IntentDetector
 
 __all__ = [
+    "APIClientConfig",
+    "create_openai_client",
     "QueryProcessor",
     "QueryNormalizer",
     "QueryExpander",
