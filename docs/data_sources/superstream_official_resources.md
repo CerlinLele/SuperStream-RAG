@@ -1,6 +1,6 @@
 # Australian SuperStream Official Resources
 
-**Last Updated**: December 11, 2025
+**Last Updated**: December 22, 2025
 
 ## Overview
 
@@ -34,12 +34,19 @@ This document consolidates official resources for the Australian SuperStream eco
 
 ### 2.2 Technical Documentation and Standards
 
-| Document Type | Description | Access Method |
-|---------------|-------------|----------------|
-| SuperStream Data Standard | XML message format and data structure specifications | Download PDF from ATO website |
-| Message Implementation Guide | Detailed message format, validation rules, and examples | Download PDF from ATO website |
-| Technical Specification | System integration and communication protocols | Download PDF from ATO website |
-| Error Code Reference | SuperStream error codes and handling guidelines | Download PDF from ATO website |
+**Official Resource Center**: [ATO Software Developers Portal](https://softwaredevelopers.ato.gov.au/SuperStreamStandard)
+
+| Document Type | Description | Direct Link | File Size |
+|---------------|-------------|-------------|-----------|
+| **Schedule 2** - Superannuation Terms and Definitions | Complete glossary of SuperStream and superannuation terminology | softwaredevelopers.ato.gov.au/SuperStreamStandard | PDF |
+| **Schedule 4a** - Contributions Message Implementation Guide | Detailed message format, validation rules, and examples for contribution messages | softwaredevelopers.ato.gov.au/ContributionV3 | Latest v3.0 |
+| **Schedule 4b** - Rollover Message Implementation Guide | Message implementation guide for rollover transactions (v3.0) | softwaredevelopers.ato.gov.au/rolloverV3 | Latest v3.0 |
+| **Schedule 5** - Message Orchestration and Profiles | System integration and message orchestration protocols | softwaredevelopers.ato.gov.au/SuperStreamStandard | PDF |
+| **Schedule 6** - Error Code Management | SuperStream error codes and handling guidelines | softwaredevelopers.ato.gov.au/SuperStreamStandard | PDF |
+| **Contributions User Guide v3.0** | Comprehensive guide for contribution standard v3.0 | softwaredevelopers.ato.gov.au/ContributionV3 | 1.0 MB |
+| **Response Messaging Framework User Guide** | Framework for processing response messages (v1.2) | [Direct Link](https://softwaredevelopers.ato.gov.au/sites/default/files/2025-03/Response_Messaging_Framework_User_Guide_v1.2_-_Draft.pdf) | 514 KB |
+| **G051 - SuperStream Payments Using NPP** | New Payment Platform (NPP) integration guide (August 2025) | [Direct Link](https://softwaredevelopers.ato.gov.au/sites/default/files/2025-08/G051_-_SuperStream_payments_using_NPP.pdf) | PDF |
+| **Data & Payment Standards Guidance** | General guidance on data and payment standards | [softwaredevelopers.ato.gov.au/SSTC/Guidance](https://softwaredevelopers.ato.gov.au/SSTC/Guidance) | Multiple docs |
 
 ### 2.3 Implementation Guides
 
@@ -130,26 +137,77 @@ This document consolidates official resources for the Australian SuperStream eco
 
 ### 5.2 Access Methods
 
-1. **Direct Download from ATO Website**
-   - Visit https://www.ato.gov.au/super/superstream
-   - Look for "Download" or "Resources" section
-   - Select the required PDF document
+#### Method 1: ATO Software Developers Portal (Recommended)
 
-2. **Through ATO Online Services**
-   - Log in to your ATO online account
-   - Access SuperStream-related pages
-   - Download specific guides and forms
+**Primary Resource Center**: https://softwaredevelopers.ato.gov.au/SuperStreamStandard
 
-3. **Contact ATO**
-   - Phone: 13 28 61 (within Australia)
-   - Website: https://www.ato.gov.au/contact-us
-   - Email: Submit inquiry through ATO website
+Steps to download:
+1. Visit [ATO Software Developers Portal](https://softwaredevelopers.ato.gov.au/SuperStreamStandard)
+2. Browse available schedules and guides
+3. Look for "Downloads" section
+4. Select required PDF document
+5. Direct download links:
+   - Contribution Standard: https://softwaredevelopers.ato.gov.au/ContributionV3
+   - Rollover Standard: https://softwaredevelopers.ato.gov.au/rolloverV3
+   - Technical Guidance: https://softwaredevelopers.ato.gov.au/SSTC/Guidance
 
-4. **Through Authorized Service Providers**
-   - Accountants
-   - Tax advisors
-   - Payroll system providers
-   - IT consulting companies
+#### Method 2: Direct PDF Downloads
+
+**Key Documents** (Latest versions as of December 2025):
+- Response Messaging Framework User Guide (v1.2 - March 2025)
+  - URL: https://softwaredevelopers.ato.gov.au/sites/default/files/2025-03/Response_Messaging_Framework_User_Guide_v1.2_-_Draft.pdf
+  - File Size: 514 KB
+
+- G051 - SuperStream Payments Using NPP (August 2025)
+  - URL: https://softwaredevelopers.ato.gov.au/sites/default/files/2025-08/G051_-_SuperStream_payments_using_NPP.pdf
+  - For NPP payment integration details
+
+#### Method 3: ATO Main Website
+
+Visit the main ATO SuperStream pages:
+- https://www.ato.gov.au/businesses-and-organisations/super-for-employers/paying-electronically-through-superstream
+- https://www.ato.gov.au/Super/SuperStream/In-detail/Contribution-data-for-SuperStream/
+
+Resources available:
+- Implementation guides
+- Frequently Asked Questions (FAQs)
+- Change notices and updates
+- Legislative instruments
+
+#### Method 4: Through ATO Online Services
+
+1. Log in to your ATO online account
+2. Navigate to SuperStream section
+3. Access role-specific guides:
+   - Employers: SuperStream for employers guides
+   - Funds: SuperStream for funds guides
+   - SMSFs: SuperStream for SMSFs guides
+4. Download relevant PDF documents
+
+#### Method 5: Contact ATO Support
+
+**For assistance locating specific documents:**
+- Phone: 13 28 61 (within Australia)
+- Website: https://www.ato.gov.au/contact-us
+- Online Inquiry: Submit specific document request
+
+**For technical questions about standards:**
+- Email inquiry through ATO Software Developers portal
+- Post to ATO Let's Talk: https://lets-talk.ato.gov.au/25295/documents
+
+#### Method 6: Through Authorized Service Providers
+
+If you're working with service providers, they may have:
+- Pre-downloaded and vetted copies of standards
+- Compliance-tested implementations
+- Updated versions with annotations
+- Support and guidance documents
+
+**Recommended Partners**:
+- Payroll software providers (MYOB, Xero, etc.)
+- Accounting firms with SuperStream expertise
+- Superannuation fund service providers
+- IT consulting companies specializing in SuperStream
 
 ---
 
@@ -233,9 +291,55 @@ This document consolidates official resources for the Australian SuperStream eco
 
 ---
 
-## 8. Updates and Changes
+## 8. Technical Terminology and Glossary Resources
 
-### 8.1 Latest Updates
+### 8.1 Official Terminology Sources
+
+For building technical terminology databases and improving query translation:
+
+#### Primary Terminology Source
+**Schedule 2 - Superannuation Terms and Definitions**
+- Location: ATO Software Developers Portal
+- Contains: Official definitions for all SuperStream and superannuation related terms
+- Format: Structured glossary (ideal for terminology extraction)
+- Use Case: Extract terms for RAG query translation and document indexing
+
+#### Terminology Categories in Official Documents
+
+1. **Financial/Superannuation Terms** (from Schedule 2)
+   - Superannuation, Contributions, Defined Benefit, Defined Contribution
+   - SMSF, MySuper, Trustee, Preservation Age
+   - Employer Contribution, Employee Contribution, Salary Sacrifice
+
+2. **Regulatory/Compliance Terms**
+   - AML (Anti-Money Laundering), KYC (Know Your Customer)
+   - CDD (Customer Due Diligence), EDD (Enhanced Due Diligence)
+   - Beneficial Owner, PEP (Politically Exposed Person)
+   - SAR (Suspicious Activity Report), CTR (Currency Transaction Report)
+
+3. **Technical/System Terms** (from Schedule 4a, 4b, 5)
+   - SuperStream XML, Electronic Service Delivery (ESD)
+   - Message Implementation, Batch Processing
+   - Error Code, Validation Rules, Data Element
+
+4. **Regulatory Body Terms**
+   - APRA (Australian Prudential Regulation Authority)
+   - ASIC (Australian Securities and Investments Commission)
+   - ATO (Australian Taxation Office)
+   - SIS Act (Superannuation Industry (Supervision) Act)
+
+### 8.2 Recommended Terminology Extraction Process
+
+For RAG systems and query translation:
+
+1. **Download** Schedule 2 (Superannuation Terms and Definitions) PDF
+2. **Extract** all defined terms using PDF parsing tools
+3. **Categorize** terms by domain (financial, regulatory, technical, legal)
+4. **Map** Chinese translations for multilingual support
+5. **Validate** extracted terms against actual usage in other schedules
+6. **Update** regularly as new versions are released
+
+### 8.3 Updates and Changes
 
 SuperStream rules and requirements are updated regularly. Latest information can be found at:
 
@@ -341,6 +445,7 @@ A:
 
 | Version | Date | Updates |
 |---------|------|---------|
+| 1.1 | 2025-12-22 | Added detailed technical documentation download locations, direct PDF links, and terminology extraction guidance |
 | 1.0 | 2025-12-11 | Initial version consolidating major official resources |
 
 ---
@@ -356,7 +461,7 @@ The information provided in this document is based on publicly available officia
 
 ---
 
-**Last Updated**: December 11, 2025
+**Last Updated**: December 22, 2025
 
 **Maintained By**: SuperStream RAG Project Team
 
