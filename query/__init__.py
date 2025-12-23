@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 # Load environment variables when the module is imported
 load_dotenv()
 
-from .api_client import APIClientConfig, create_openai_client
+from utils import APIClientConfig, create_openai_client
 from .processor import QueryProcessor
 from .normalizer import QueryNormalizer
 from .expander import QueryExpander
