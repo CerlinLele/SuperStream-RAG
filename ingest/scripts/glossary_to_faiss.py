@@ -161,7 +161,7 @@ def main():
     from pathlib import Path
 
     # Try JSON file first (preferred method for this problematic PDF)
-    json_path = DATA_DIR / "glossaries" / "superstream_glossary.json"
+    json_path = DATA_DIR / "glossaries" / "glossary.json"
 
     if json_path.exists():
         print(f"Found pre-existing glossary JSON file, using that...")
