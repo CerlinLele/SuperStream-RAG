@@ -1,13 +1,13 @@
 """
 Schedule 2 Processor - Terms and Definitions
 
-Handles PDF extraction using PDFReader (free LlamaIndex reader).
+Handles PDF extraction using PDFReader (free, open-source PDF text extraction).
 Optimized for Schedule 2's simple 2-3 column glossary table structure.
 
 Processing approach:
 1. Detect PDF version (v2.x or v3.x)
 2. Route to appropriate version-specific processor
-3. Extract text from PDF using PDFReader
+3. Extract text from PDF using PDFReader (PyPDF-based)
 4. Parse table structure from extracted text
 5. Extract term-definition pairs
 6. Create LlamaIndex documents for RAG
@@ -48,13 +48,13 @@ class Schedule2Processor(BaseProcessor):
     Processor for Schedule 2 - Terms and Definitions.
 
     This processor specializes in extracting terminology from Schedule 2 PDFs.
-    It uses LlamaParse to intelligently parse tables and preserve structure.
+    It uses PDFReader (free, open-source) for reliable text extraction.
 
     Processing strategy:
     1. Detect PDF version (v2.x or v3.x)
     2. Route to appropriate version-specific processor
-    3. Use LlamaParse to extract PDF with table awareness
-    4. Parse the structured markdown output
+    3. Use PDFReader to extract PDF text content
+    4. Parse the extracted text for structured blocks
     5. Extract term-definition pairs from tables
     6. Create semantic-aware chunks for RAG
     7. Generate searchable text representations
@@ -151,7 +151,7 @@ class Schedule2Processor(BaseProcessor):
 
     def _parse_with_pdfreader(self, pdf_path: Path) -> str:
         """
-        Parse PDF using PDFReader (free LlamaIndex reader).
+        Parse PDF using PDFReader (free, open-source PDF text extraction).
 
         PDFReader uses PyPDF library for text extraction.
         Works well for structured documents like glossaries.
